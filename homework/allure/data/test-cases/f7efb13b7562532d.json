@@ -1,0 +1,65 @@
+{
+  "uid" : "f7efb13b7562532d",
+  "name" : "test_div_intparam[10000-1-10000]",
+  "fullName" : "homework.test_wyjhomework#test_div_intparam",
+  "historyId" : "d650ab5e517a219892b2efeb7dd0853e",
+  "time" : {
+    "start" : 1582975236306,
+    "stop" : 1582975236306,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "int_test"
+  }, {
+    "name" : "parentSuite",
+    "value" : "homework"
+  }, {
+    "name" : "suite",
+    "value" : "test_wyjhomework"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-GLFLRPL6"
+  }, {
+    "name" : "thread",
+    "value" : "22372-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "homework.test_wyjhomework"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expection",
+    "value" : "10000"
+  }, {
+    "name" : "num1",
+    "value" : "10000"
+  }, {
+    "name" : "num2",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "int_test" ]
+  },
+  "source" : "f7efb13b7562532d.json",
+  "parameterValues" : [ "10000", "10000", "1" ]
+}

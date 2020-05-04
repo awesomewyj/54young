@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="4" hostname="LAPTOP-GLFLRPL6" name="pytest" skipped="0" tests="11" time="0.424" timestamp="2020-02-29T19:20:36.259326"><testcase classname="homework.test_wyjhomework" file="homework\test_wyjhomework.py" line="5" name="test_div_intparam[0-50-0]" time="0.005"></testcase><testcase classname="homework.test_wyjhomework" file="homework\test_wyjhomework.py" line="5" name="test_div_intparam[10000-1-10000]" time="0.003"></testcase><testcase classname="homework.test_wyjhomework" file="homework\test_wyjhomework.py" line="5" name="test_div_intparam[10-2-5]" time="0.007"></testcase><testcase classname="homework.test_wyjhomework" file="homework\test_wyjhomework.py" line="5" name="test_div_intparam[55-5-12]" time="0.002"><failure message="assert 11.0 == 12
+ +  where 11.0 = div(55, 5)">num1 = 55, num2 = 5, expection = 12
+
+    @pytest.mark.int_test
+    @pytest.mark.parametrize(&quot;num1,num2,expection&quot;, {
+        (10, 2, 5),
+        (0, 50, 0),
+        (10000, 1, 10000),
+        (55,5,12)
+    })
+    def test_div_intparam(num1, num2, expection):
+&gt;       assert div(num1, num2) == expection
+E       assert 11.0 == 12
+E        +  where 11.0 = div(55, 5)
+
+homework\test_wyjhomework.py:14: AssertionError</failure></testcase><testcase classname="homework.test_wyjhomework" file="homework\test_wyjhomework.py" line="16" name="test_div_floatparam[7-4-1.75]" time="0.003"></testcase><testcase classname="homework.test_wyjhomework" file="homework\test_wyjhomework.py" line="16" name="test_div_floatparam[1.05-1-1.05]" time="0.009"></testcase><testcase classname="homework.test_wyjhomework" file="homework\test_wyjhomework.py" line="16" name="test_div_floatparam[100-3-33.333333333333336]" time="0.003"></testcase><testcase classname="homework.test_wyjhomework" file="homework\test_wyjhomework.py" line="27" name="test_div_stringparam[abc-abc-1]" time="0.004"><failure message="TypeError: unsupported operand type(s) for /: &apos;str&apos; and &apos;str&apos;">num1 = &apos;abc&apos;, num2 = &apos;abc&apos;, expection = 1
+
+    @pytest.mark.string_test
+    @pytest.mark.parametrize(&quot;num1,num2,expection&quot;, {
+        (&quot;abc&quot;, 1, TypeError),
+        (&quot;abc&quot;, &quot;abc&quot;, 1),
+        (7, &quot;abc&quot;, None)
+    })
+    def test_div_stringparam(num1, num2, expection):
+&gt;       assert div(num1, num2) == expection
+
+homework\test_wyjhomework.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = &apos;abc&apos;, b = &apos;abc&apos;
+
+    def div(a, b):
+&gt;       return a/b
+E       TypeError: unsupported operand type(s) for /: &apos;str&apos; and &apos;str&apos;
+
+homework\div.py:2: TypeError</failure></testcase><testcase classname="homework.test_wyjhomework" file="homework\test_wyjhomework.py" line="27" name="test_div_stringparam[abc-1-TypeError]" time="0.005"><failure message="TypeError: unsupported operand type(s) for /: &apos;str&apos; and &apos;int&apos;">num1 = &apos;abc&apos;, num2 = 1, expection = &lt;class &apos;TypeError&apos;&gt;
+
+    @pytest.mark.string_test
+    @pytest.mark.parametrize(&quot;num1,num2,expection&quot;, {
+        (&quot;abc&quot;, 1, TypeError),
+        (&quot;abc&quot;, &quot;abc&quot;, 1),
+        (7, &quot;abc&quot;, None)
+    })
+    def test_div_stringparam(num1, num2, expection):
+&gt;       assert div(num1, num2) == expection
+
+homework\test_wyjhomework.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = &apos;abc&apos;, b = 1
+
+    def div(a, b):
+&gt;       return a/b
+E       TypeError: unsupported operand type(s) for /: &apos;str&apos; and &apos;int&apos;
+
+homework\div.py:2: TypeError</failure></testcase><testcase classname="homework.test_wyjhomework" file="homework\test_wyjhomework.py" line="27" name="test_div_stringparam[7-abc-None]" time="0.006"><failure message="TypeError: unsupported operand type(s) for /: &apos;int&apos; and &apos;str&apos;">num1 = 7, num2 = &apos;abc&apos;, expection = None
+
+    @pytest.mark.string_test
+    @pytest.mark.parametrize(&quot;num1,num2,expection&quot;, {
+        (&quot;abc&quot;, 1, TypeError),
+        (&quot;abc&quot;, &quot;abc&quot;, 1),
+        (7, &quot;abc&quot;, None)
+    })
+    def test_div_stringparam(num1, num2, expection):
+&gt;       assert div(num1, num2) == expection
+
+homework\test_wyjhomework.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = 7, b = &apos;abc&apos;
+
+    def div(a, b):
+&gt;       return a/b
+E       TypeError: unsupported operand type(s) for /: &apos;int&apos; and &apos;str&apos;
+
+homework\div.py:2: TypeError</failure></testcase><testcase classname="homework.test_wyjhomework" file="homework\test_wyjhomework.py" line="38" name="test_div_zeroparam[5-0-ZeroDivisionError]" time="0.006"></testcase></testsuite></testsuites>

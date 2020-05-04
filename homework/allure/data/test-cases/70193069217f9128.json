@@ -1,0 +1,71 @@
+{
+  "uid" : "70193069217f9128",
+  "name" : "test_div_stringparam[abc-1-TypeError]",
+  "fullName" : "homework.test_wyjhomework#test_div_stringparam",
+  "historyId" : "fc1aa28fd07a70c77e140eaa99d974d5",
+  "time" : {
+    "start" : 1582975236646,
+    "stop" : 1582975236646,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: unsupported operand type(s) for /: 'str' and 'int'",
+  "statusTrace" : "num1 = 'abc', num2 = 1, expection = <class 'TypeError'>\n\n    @pytest.mark.string_test\n    @pytest.mark.parametrize(\"num1,num2,expection\", {\n        (\"abc\", 1, TypeError),\n        (\"abc\", \"abc\", 1),\n        (7, \"abc\", None)\n    })\n    def test_div_stringparam(num1, num2, expection):\n>       assert div(num1, num2) == expection\n\nhomework\\test_wyjhomework.py:35: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\na = 'abc', b = 1\n\n    def div(a, b):\n>       return a/b\nE       TypeError: unsupported operand type(s) for /: 'str' and 'int'\n\nhomework\\div.py:2: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "string_test"
+  }, {
+    "name" : "parentSuite",
+    "value" : "homework"
+  }, {
+    "name" : "suite",
+    "value" : "test_wyjhomework"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-GLFLRPL6"
+  }, {
+    "name" : "thread",
+    "value" : "22372-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "homework.test_wyjhomework"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expection",
+    "value" : "<class 'TypeError'>"
+  }, {
+    "name" : "num1",
+    "value" : "'abc'"
+  }, {
+    "name" : "num2",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "string_test" ]
+  },
+  "source" : "70193069217f9128.json",
+  "parameterValues" : [ "<class 'TypeError'>", "'abc'", "1" ]
+}

@@ -1,0 +1,71 @@
+{
+  "uid" : "7ff30c2177151fb9",
+  "name" : "test_div_stringparam[abc-abc-1]",
+  "fullName" : "homework.test_wyjhomework#test_div_stringparam",
+  "historyId" : "f238e7f748e8a7407996f6d143113ae3",
+  "time" : {
+    "start" : 1582975236633,
+    "stop" : 1582975236633,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: unsupported operand type(s) for /: 'str' and 'str'",
+  "statusTrace" : "num1 = 'abc', num2 = 'abc', expection = 1\n\n    @pytest.mark.string_test\n    @pytest.mark.parametrize(\"num1,num2,expection\", {\n        (\"abc\", 1, TypeError),\n        (\"abc\", \"abc\", 1),\n        (7, \"abc\", None)\n    })\n    def test_div_stringparam(num1, num2, expection):\n>       assert div(num1, num2) == expection\n\nhomework\\test_wyjhomework.py:35: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\na = 'abc', b = 'abc'\n\n    def div(a, b):\n>       return a/b\nE       TypeError: unsupported operand type(s) for /: 'str' and 'str'\n\nhomework\\div.py:2: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "string_test"
+  }, {
+    "name" : "parentSuite",
+    "value" : "homework"
+  }, {
+    "name" : "suite",
+    "value" : "test_wyjhomework"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-GLFLRPL6"
+  }, {
+    "name" : "thread",
+    "value" : "22372-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "homework.test_wyjhomework"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expection",
+    "value" : "1"
+  }, {
+    "name" : "num1",
+    "value" : "'abc'"
+  }, {
+    "name" : "num2",
+    "value" : "'abc'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "string_test" ]
+  },
+  "source" : "7ff30c2177151fb9.json",
+  "parameterValues" : [ "1", "'abc'", "'abc'" ]
+}

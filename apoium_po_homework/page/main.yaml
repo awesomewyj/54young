@@ -1,0 +1,7 @@
+- by: xpath
+  locator: "//*[@text='行情']"
+  action: click
+
+#- by: xpath
+#  locator: "//*[@text='我的']"
+#  action: click

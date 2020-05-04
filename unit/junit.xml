@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="4" hostname="LAPTOP-GLFLRPL6" name="pytest" skipped="0" tests="5" time="0.161" timestamp="2020-02-29T16:41:47.869365"><testcase classname="unit.test_demo.TestDemo" file="unit\test_demo.py" line="23" name="test_demo" time="0.005"><failure message="AssertionError: False is not true">self = &lt;unit.test_demo.TestDemo testMethod=test_demo&gt;
+
+    def test_demo(self):
+&gt;       self.assertTrue(False)
+E       AssertionError: False is not true
+
+unit\test_demo.py:25: AssertionError</failure><system-out>setupcalss
+setup
+tearDown
+</system-out></testcase><testcase classname="unit.test_demo.TestDemo" file="unit\test_demo.py" line="18" name="test_sum" time="0.004"><failure message="AssertionError: 4 != 3 : 3 expection=3">self = &lt;unit.test_demo.TestDemo testMethod=test_sum&gt;
+
+    def test_sum(self):
+        x = 1 + 2
+        print(x)
+&gt;       self.assertEqual(4, x, f&quot;{x} expection=3&quot;)
+E       AssertionError: 4 != 3 : 3 expection=3
+
+unit\test_demo.py:22: AssertionError</failure><system-out>setup
+3
+tearDown
+tearDownClass
+</system-out></testcase><testcase classname="unit.test_pytest" file="unit\test_pytest.py" line="4" name="test_answer" time="0.004"><failure message="assert 4 == 5
+ +  where 4 = inc(3)">def test_answer():
+&gt;       assert inc(3) == 5
+E       assert 4 == 5
+E        +  where 4 = inc(3)
+
+unit\test_pytest.py:6: AssertionError</failure><system-out>setup function
+</system-out></testcase><testcase classname="unit.test_pytest.TestClass" file="unit\test_pytest.py" line="20" name="test_one" time="0.009"><system-out>setup_class
+setup
+</system-out></testcase><testcase classname="unit.test_pytest.TestClass" file="unit\test_pytest.py" line="24" name="test_two" time="0.005"><failure message="AssertionError: assert False
+ +  where False = hasattr(&apos;hello&apos;, &apos;check&apos;)">self = &lt;unit.test_pytest.TestClass object at 0x0000029988E4CEF0&gt;
+
+    def test_two(self):
+        x = &quot;hello&quot;
+&gt;       assert hasattr(x, &quot;check&quot;)
+E       AssertionError: assert False
+E        +  where False = hasattr(&apos;hello&apos;, &apos;check&apos;)
+
+unit\test_pytest.py:27: AssertionError</failure><system-out>setup
+</system-out></testcase></testsuite></testsuites>
